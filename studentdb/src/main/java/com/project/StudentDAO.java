@@ -20,7 +20,7 @@ public void createStudent(final Student student) {
 		if(!et.isActive()) {
 			et.begin();
 		}
-	 
+	Student mergedStudent = em.merge(student); 
 		et.commit();
 	}
 	catch(Exception e) {
