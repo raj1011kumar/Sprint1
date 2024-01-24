@@ -24,6 +24,7 @@ private String semail;
 private String phonenumber;
 @Column(name="gen")
 private String gender;
+
 public int getSid() {
 	return sid;
 }
@@ -60,11 +61,13 @@ public String getGender() {
 public void setGender(String gender) {
 	this.gender = gender;
 }
+
 @Override
 public String toString() {
 	return "Student [sid=" + sid + ", sfirtname=" + sfirtname + ", slastname=" + slastname + ", semail=" + semail
 			+ ", phonenumber=" + phonenumber + ", gender=" + gender + "]";
 }
+
 public Student(int sid, String sfirtname, String slastname, String semail, String phonenumber, String gender) {
 	super();
 	this.sid = sid;
@@ -74,6 +77,7 @@ public Student(int sid, String sfirtname, String slastname, String semail, Strin
 	this.phonenumber = phonenumber;
 	this.gender = gender;
 }
+
 public Student() {
 	super();
 	

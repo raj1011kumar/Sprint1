@@ -20,7 +20,7 @@ public void createStudent(final Student student) {
 		if(!et.isActive()) {
 			et.begin();
 		}
-	Student mergedStudent = em.merge(student); 
+		Student mergedStudent = em.merge(student);
 		et.commit();
 	}
 	catch(Exception e) {
@@ -48,6 +48,7 @@ public void updateStudent( int id, String newFirstName, String newLastName, Stri
 		}
 		
 	}
+	
 	catch (Exception e) {
 		 e.printStackTrace();
 	}
